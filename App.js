@@ -6,12 +6,18 @@ import { StatusBar } from 'expo-status-bar';
 import Constants from 'expo-constants';
 
 import GitHubForkRibbon from 'react-github-fork-ribbon';
+import * as Analytics from 'expo-firebase-analytics';
 
 import {
   useFonts,
-  Roboto_400Regular,
-  SecularOne_400Regular,
-} from "@expo-google-fonts/dev";
+  Roboto_400Regular
+} from "@expo-google-fonts/roboto";
+
+import {
+  SecularOne_400Regular
+} from "@expo-google-fonts/secular-one";
+
+
 
 function App() {
   let [fontsLoaded] = useFonts({
@@ -23,6 +29,12 @@ function App() {
     return <AppLoading />;
   }
 
+  Analytics.logEvent('LoadedPage', {
+    name: 'loaded',
+    screen: 'home',
+    purpose: 'Loaded the start page',
+  });
+  
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
