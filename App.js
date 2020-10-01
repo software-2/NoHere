@@ -5,6 +5,8 @@ import { AppLoading } from "expo";
 import { StatusBar } from 'expo-status-bar';
 import Constants from 'expo-constants';
 
+import GitHubForkRibbon from 'react-github-fork-ribbon';
+
 import {
   useFonts,
   Roboto_400Regular,
@@ -80,6 +82,7 @@ function App() {
         </View>
         <StatusBar style="auto" />
       </ScrollView>
+    <GitHubForkRibbon href="https://github.com/software-2/NoHere" target="_blank" position="right-bottom" color="green">Fork me on GitHub</GitHubForkRibbon>
     </SafeAreaView>
   );
 }
