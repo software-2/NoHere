@@ -41,6 +41,11 @@ function App() {
             needed one person to answer you. Most of them couldn't even answer you if they wanted to. Multiply that 5-60 minutes by all of those people. How much time
             just got wasted? How many people sharing their screen in a meeting just had your question pop up on the screen because they forgot to turn off Slack first?
             </Text>
+            <Text style={styles.paragraph}>
+            Your team wants to help you. That's why they respond so quickly when they hear that <i>shht pah pah pah</i> sound. But if you ask your question
+            without @here, they'll still answer you. They'll just do it when they have a few spare moments, or they're at a good break point where an interruption won't harm
+            their productivity.
+            </Text>
 
 
             <Text style={styles.preamble}>@here is for group emergencies</Text>
@@ -66,19 +71,8 @@ function App() {
             to the room? Sure, fire off an @here, because you've got important information that will save people time, not waste it.
             </Text>
 
-
-            <Text style={styles.preamble}>Even when it gets you an answer faster, it's the wrong thing to do</Text>
-
-            <Text style={styles.paragraph}>
-            Your team wants to help you. That's why they respond so quickly when they hear that shht pah pah pah sound they jump in to help you. But if you ask your question
-            without @here, they'll still answer you. They'll just do it when they have a few spare moments, or they're at a good break point where an interruption won't harm
-            their productivity.
-            </Text>
-
-
             <Text style={styles.preamble}> </Text>
             
-
         </View>
         <StatusBar style="auto" />
       </ScrollView>
